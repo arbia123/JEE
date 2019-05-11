@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DSjee</display-name>
+  <session-config>
+    <session-timeout>10</session-timeout>
+  </session-config>
+ 
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>Com.Controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Com.Controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>Com.Controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TripServlet</servlet-name>
+    <servlet-class>Com.Controller.TripServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TripServlet</servlet-name>
+    <url-pattern>/Trip</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletUpdate</servlet-name>
+    <servlet-class>Com.Controller.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletUpdate</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletListe</servlet-name>
+    <servlet-class>Com.Controller.ListeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletListe</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+        <servlet-name>ServletDell</servlet-name>
+        <servlet-class>Com.Controller.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletDell</servlet-name>
+        <url-pattern>/dell</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
